@@ -4,27 +4,47 @@ import './globals.css';
 
 export default function Home() {
   return (
-    
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
       <nav className='navbar'>
         <ul className='navList'>
           <li className='navItem'>
             <Link href="/">
-              <a>Hoe</a>
+              Home
             </Link>
           </li>
           <li className='navItem'>
             <Link href="/about">
-              <a>About</a>
+              About
             </Link>
           </li>
           <li className='navItem'>
             <Link href="/contact">
-              <a>Contct</a>
+              Contact
             </Link>
           </li>
         </ul>
       </nav>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      {/* <nav className='navbar'>
+        <ul className='navList'>
+          <li className='navItem'>
+            <Link href="/">
+              Home
+            </Link>
+          </li>
+          <li className='navItem'>
+            <Link href="/about">
+              About
+            </Link>
+          </li>
+          <li className='navItem'>
+            <Link href="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav> */}
     </main>
+    </>
   );
 }
