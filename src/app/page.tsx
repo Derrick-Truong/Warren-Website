@@ -14,7 +14,7 @@ export default function Home() {
           </li>
           <li className='navItem'>
             <Link href="/about">
-              About
+              A
             </Link>
           </li>
           <li className='navItem'>
