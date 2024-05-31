@@ -14,12 +14,12 @@ export default function Home() {
           </li>
           <li className='navItem'>
             <Link href="/about">
-              Ab
+              About
             </Link>
           </li>
           <li className='navItem'>
             <Link href="/contact">
-              Contact
+              Cont
             </Link>
           </li>
         </ul>
