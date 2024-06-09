@@ -33,7 +33,7 @@ export default function Home() {
               <h1 className='authorName'>Warren Something</h1>
               <div className='topicsOuter'>
               <div className='topics'>Algebra</div>
-              <div className='topics'>Calculus</div>
+              <div className='topics'>Algebra</div>
               </div>
             </div>
             <h2>context</h2>
