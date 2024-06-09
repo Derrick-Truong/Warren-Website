@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 import './globals.css';
+import Head from "../assets/Warren_headshot.jpg"
 
 export default function Home() {
   return (
@@ -24,8 +25,22 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    </main>
+      <main className="flex flex-col justify-between p-24">
+        <div className='aboutMe'>
+          <Image alt="Head" src={Head} className="head"></Image>
+          <div className="authorBody">
+            <div className="authorTitle">
+              <h1 className='authorName'>Warren Something</h1>
+              <div className='topicsOuter'>
+              <div className='topics'>Algebra</div>
+              <div className='topics'>Algebra</div>
+              </div>
+            </div>
+            <h2>context</h2>
+          </div>
+        </div>
+      </main>
     </>
+
   );
 }

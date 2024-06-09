@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -14,7 +14,7 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} 
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,6 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -54,4 +55,45 @@ body {
 
 .navItem a:hover {
   text-decoration: underline;
+}
+
+main {
+  display: block;
+  height: 100%;
+}
+.aboutMe {
+display: flex;
+ border: thin solid black;
+ padding: 10px;
+ max-width: 100%;
+ min-height: 360px;
+
+}
+.authorBody {
+padding-left: 10px;
+}
+.authorName {
+font-size: 38px;
+font-weight: bold;
+}
+.authorTitle {
+  display:flex;
+  padding-left: 10px;
+  
+}
+.topicsOuter {
+  display: flex;
+  padding-left: 50px;
+  padding-top: 12px;
+}
+.head {
+  height: 15%;
+  width: 15%;
+
+}
+
+.topics{
+  padding: 1px 13px 1px 13px;
+  border: solid 2px purple;
+  border-radius: 30px;
 }
