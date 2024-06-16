@@ -65,12 +65,14 @@ body {
   height: calc(100vh - 80px);
 }
 
+
+
 .aboutMe {
   display: flex;
   border: thin solid black;
   padding: 10px;
-  width: 1300px;
-  height: 320px;
+  width: 1400px;
+  height: 400px;
 }
 
 .authorBody {
@@ -103,8 +105,8 @@ body {
 }
 
 .head {
-  height: 280px;
-  width: 280px;
+  height: 330px;
+  width: 340px;
   border-radius: 20px;
 }
 
@@ -117,7 +119,7 @@ body {
 
 .description {
   padding-left: 6px;
- 
+  font-size: 0.9em
 }
 
 .outerDescription {
@@ -127,16 +129,74 @@ body {
 }
 
 .studyGuidesOuter {
-display: flex;
+display: block;
   border: thin solid black;
   padding: 10px;
-  width: 1300px;
-  height: 300px;
+  width: 1400px;
+  height: 700px;
   margin-top: 20px;
 }
 
-.studyGuides{
+.studyGuidesTitle{
   font-size: 20px;
 }
 
+.studyGuides{
+  display: flex;
+}
+
+.studyPic {
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.studyImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+   border-radius: 15px; /* Slightly curved border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+  cursor: pointer;
+}
+
+.studyImage:hover{
+  transform: scale(1.1);
+}
+
+.popupImage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.popupImage img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.popupImage .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.popupImage img {
+  max-width: 100%;
+  max-height: 80vh;
+}
 
