@@ -51,7 +51,7 @@ export default function Home() {
             <h2 className="jobTitle">Mathematics Tutor</h2>
             <div className="outerDescription">
               <p className="description">
-                Hello! I'm Warren Fernandez, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo.
+                Hello! I am Warren Fernandez, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo.
 
                 Since 2000, I have been teaching high school mathematics at a K-12 school in the East Bay. I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo. Throughout my career, I have been fortunate to achieve a 95% pass rate among my AP Calculus students on the AP exam. I have also been honored to serve as a graduation commencement speaker and received a yearbook dedication.
 
