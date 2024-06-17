@@ -40,7 +40,7 @@ export default function Home() {
           <Image alt="Head" src={HeadImage} className="head" />
           <div className="authorBody">
             <div className="authorTitle">
-              <h1 className="authorName">Warren Something</h1>
+              <h1 className="authorName">Warren Fernandez</h1>
               <div className="topicsOuter">
                 <div className="topics">Algebra</div>
                 <div className="topics">Geometry</div>
@@ -67,12 +67,15 @@ export default function Home() {
           <div className="studyGuides">
             <div className="studyPic" onClick={() => handleImageClick(Algebra.src)}>
               <Image src={Algebra} alt="Algebra" className="studyImage" />
+              <div className='studyPicTitles'>Algebra</div>
             </div>
             <div className="studyPic" onClick={() => handleImageClick(Geometry.src)}>
               <Image src={Geometry} alt="Geometry" className="studyImage" />
+              <div className='studyPicTitles2'>Geometry</div>    
             </div>
             <div className="studyPic" onClick={() => handleImageClick(Calculus.src)}>
               <Image src={Calculus} alt="Calculus" className="studyImage" />
+              <div className='studyPicTitles3'>Calculus</div>    
             </div>
           </div>
         </div>
