@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 const ContactUs = () => {
     const form = useRef(null); // Explicitly initialize useRef with null
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
 
         if (form.current) {
@@ -32,25 +32,24 @@ const ContactUs = () => {
     //     <textarea name="message" required />
     //     <input type="submit" value="Send" />
     // </form>
-    // return (
-    //     <>
-    //     <section>
-    //         <div className='contactContainer'>
-    //             <h2 className='--text-center'>Contact Me
-    //             </h2>
-    //             <form className='--form-control --card'>
-    //                 <input type='text' placeholder='Full Name'
-    //                     name='user_name' required />
-    //                 <input type='text' placeholder='Email'
-    //                     name='user_email' required />
-    //                 <textarea name='message' cols='30' rows='10'>
-    //                 </textarea>
-    //                 <button type='submit' className='--btn-primary'>Send Message</button>
-    //             </form>
-    //         </div>
-    //     </section>
-    //     </>
-    // );
+    return (
+        <>
+        <section>
+            <div className='container'>
+                <h2 className='--text-center'>Contact Me</h2>
+                <form className='--form-control --card --flex-center --dir-column'>
+                    <input type='text' placeholder='Full Name'
+                        name='user_name' required />
+                    <input type='text' placeholder='Email'
+                        name='user_email' required />
+                    <textarea name='message' cols={30} rows={10}>
+                    </textarea>
+                    <button type='submit' className='--btn-primary'>Send Message</button>
+                </form>
+            </div>
+        </section>
+        </>
+    );
 };
 
 export default ContactUs;
