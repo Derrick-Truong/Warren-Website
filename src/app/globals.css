@@ -54,9 +54,9 @@ body {
 
 .aboutMe {
     display: flex;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
     width: 1250px;
-    height: 400px;
+    min-height: 400px;
 }
 
 .authorBody {
@@ -122,7 +122,7 @@ body {
 
 .studyGuidesOuter {
     display: block;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     width: 1400px;
     height: 700px;
     margin-top: 20px;
@@ -183,7 +183,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 .calendarOuter .fc-myCustomButton-button {
  padding: 5px;
  background-color: #003366;
-border-radius: 8px;
+/* border-radius: 8px; */
 
 }
 .popupImage, .popup {
@@ -224,10 +224,10 @@ border-radius: 8px;
     max-height: 80vh;
 }
 
-.studyPicTitlesOuter {
+/* .studyPicTitlesOuter {
     display: flex;
     padding-top: 10px;
-}
+} */
 
 .studyPicTitles, .studyPicTitles2, .studyPicTitles3 {
     z-index: 1;
@@ -422,7 +422,7 @@ border-radius: 8px;
 
 section {
   width: 100%;
-  padding: 8rem 0;
+  padding: 7rem 0rem 4rem 0rem;
 }
 
 .container {
@@ -452,11 +452,14 @@ section {
   max-width: 1275px;
   border: 1px solid #003366;
   z-index: 100;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
 }
 .faqActive {
     margin-top: 0.7rem;
   /* margin-top: 2rem; */
   max-width: 1275px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid #003366;
   z-index: 100;
 
@@ -486,14 +489,13 @@ section {
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.4s ease;
+  transition: max-height 1.6s ease;
   padding: 0px 15px;
 }
 
 .faqActive .answer {
   max-height: 300px;
   animation: fade 1s ease-in-out;
-  /* min-height: 65px; */
 }
 
 .faqActive .question svg {
