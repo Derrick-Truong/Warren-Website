@@ -11,7 +11,9 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: white;
+    margin: 0 auto;
+    width: 100vw;
     color: #333333;
     font-family: 'Roboto', Helvetica, sans-serif;
 }
@@ -48,7 +50,8 @@ body {
     flex-direction: column;
     padding: 48px;
     padding-left: 150px;
-    width: 100vw;
+    /* margin: 0 auto;
+    width: 100vw; */
     height: calc(100vh - 80px);
 }
 
@@ -96,7 +99,7 @@ body {
 
 .topics {
     padding: 5px 10px;
-    border: solid 2px #003366;
+    border: solid 2px #5072A7;
     border-radius: 30px;
     margin-right: 5px;
     font-weight: 500;
@@ -105,7 +108,8 @@ body {
 .description {
     padding-left: 6px;
     font-size: .92em;
-    font-weight: 500;
+    font-weight: 600;
+ 
 }
 
 .expandText {
@@ -117,6 +121,7 @@ body {
     min-width: 820px;
     flex-shrink: 1;
     word-break: break-word;
+    z-index:1
 }
 
 
@@ -172,17 +177,27 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 
 }
 .calendarOuter .fc-toolbar-title{
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 600;
+  margin-top: 10px;
   /* padding-left: 5px;
   padding-right: 5px; */
 }
 
 .calendarOuter .fc-prev-button,
+.calendarOuter .fc-next-button {
+  margin-right: 5px;
+}
+
+.calendarOuter .fc-myCustomButton-button{
+ margin-left: 5px;
+}
+.calendarOuter .fc-prev-button,
 .calendarOuter .fc-next-button,
 .calendarOuter .fc-myCustomButton-button {
  padding: 5px;
- background-color: #003366;
+ background-color: #00538C;
+ margin-top: 10px;
 /* border-radius: 8px; */
 
 }
@@ -248,7 +263,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 500px; /* Set the width to 340 pixels */
+    width: 550px; /* Set the width to 340 pixels */
     padding-left: 170px;
     position: fixed;
     right: 3%;
@@ -258,7 +273,11 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 
 .calendarOuter .fc {
   width: 100%;
-   z-index: 400;
+   /* z-index: 400; */
+  margin-left: 20px;
+  background-color: white;
+    /* margin-top: 20px;
+    margin-left: 10%; */
 }
 
 .contactUsOuter {
@@ -268,10 +287,11 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     width: 200px;
     color: white;
     border-radius: 10px;
-    background-color: #003366;
+    background-color: #00538C;
     padding: 8px 15px;
     margin-top: 20px;
 }
+
 
 .--btn {
   font-size: 1.6rem;
@@ -472,7 +492,7 @@ section {
   justify-content: space-between;
   cursor: pointer;
   font-size: 1.1rem;
-  background-color: #003366;
+  background-color: #00308F;
   padding: 8px 15px;
   color: white;
   font-weight: 500;
@@ -492,6 +512,7 @@ section {
   overflow: hidden;
   transition: max-height 1.6s ease;
   padding: 0px 15px;
+  background-color: white;
 }
 
 .faqActive .answer {
