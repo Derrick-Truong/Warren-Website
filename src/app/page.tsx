@@ -113,7 +113,7 @@ export default function Home() {
             <Link href="/about">About</Link>
           </li>
           <li className="navItem">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">FAQ</Link>
           </li>
         </ul>
       </nav>
