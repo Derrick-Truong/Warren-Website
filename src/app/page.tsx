@@ -72,8 +72,8 @@ export default function Home() {
     setIsExpanded(!isExpanded);
   };
 
-  const truncatedText = "Hello! I am Warren Fernandes, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo. Since 2000, I have been teaching high school mathematics at a K - 12 school in the East Bay.I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo.Throughout my career, I have been fortunate to achieve a 95 % pass rate among my AP Calculus students on the AP exam.I have also been honored to serve as a graduation commencement speaker and received a yearbook dedication. Beyond my professional life, I am a husband and father who loves to travel and maintain an active lifestyle.  My teaching philosophy is centered on making math accessible and enjoyable for all students. I have extensive experience working with students from diverse backgrounds and different learning styles";
-  const fullText = "Hello! I am Warren Fernandes, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo. Since 2000, I have been teaching high school mathematics at a K-12 school in the East Bay. I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo. Throughout my career, I have been fortunate to achieve a 95% pass rate among my AP Calculus students on the AP exam. I have also been honored to serve as a graduation commencement speaker and received a yearbook dedication. Beyond my professional life, I am a husband and father who loves to travel and maintain an active lifestyle. My teaching philosophy is centered on making math accessible and enjoyable for all students. I have extensive experience working with students from diverse backgrounds and different learning styles, and I am passionate about helping each student reach their full potential. I am available to tutor Algebra 1 through AP Calculus, as well as standardized tests such as the ACT and SAT I/II. Tutoring sessions can be conducted via ZOOM or in person, depending on your preference. Whether you're struggling with basic concepts or aiming to master advanced topics, I am here to provide personalized guidance and support to help you succeed.";
+  const truncatedText = "Hello! I am Warren Fernandes, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo. Since 2000, I have been teaching high school mathematics at a K - 12 school in the East Bay.I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo.Throughout my career, I have been fortunate to achieve a 95 % pass rate among my AP Calculus students on the AP exam. Beyond my professional life, I am a husband and father who loves to travel and maintain an active lifestyle.  My teaching philosophy is centered on making math accessible and enjoyable for all students. I have extensive experience working with students from diverse backgrounds and different learning styles";
+  const fullText = "Hello! I am Warren Fernandes, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo. Since 2000, I have been teaching high school mathematics at a K-12 school in the East Bay. I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo. Throughout my career, I have been fortunate to achieve a 95% pass rate among my AP Calculus students on the AP exam. Beyond my professional life, I am a husband and father who loves to travel and maintain an active lifestyle. My teaching philosophy is centered on making math accessible and enjoyable for all students. I have extensive experience working with students from diverse backgrounds and different learning styles, and I am passionate about helping each student reach their full potential. I am available to tutor Algebra 1 through AP Calculus, as well as standardized tests such as the ACT and SAT I/II. Whether you're struggling with basic concepts or aiming to master advanced topics, I am here to provide personalized guidance and support to help you succeed.";
 
   const businessHours = [
     {
@@ -133,6 +133,7 @@ export default function Home() {
             <h2 className="jobTitle">Mathematics Tutor</h2>
             <div className="outerDescription">
               <p className="description">
+                {/* {fullText} */}
                 {isExpanded ? fullText : truncatedText}
                 {!isExpanded && (
                   <span className="expandText" onClick={toggleParagraph}>
@@ -189,7 +190,7 @@ export default function Home() {
           <div className={faqActive ? 'faqActive': 'faq'} onClick={toggleClass}>
             <div className='question'>
               <h3>What subjects do you tutor?</h3>
-              <svg width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -201,7 +202,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive1 ? 'faqActive' : 'faq'} onClick={toggleClass1}>
             <div className='question'>
               <h3>How are tutoring sessions conducted?</h3>
-              <svg width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -214,7 +215,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive2 ? 'faqActive' : 'faq'} onClick={toggleClass2}>
             <div className='question'>
               <h3>What are your qualifications?</h3>
-              <svg width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -227,7 +228,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive3 ? 'faqActive' : 'faq'} onClick={toggleClass3}>
             <div className='question'>
               <h3>How much do you charge for tutoring sessions?</h3>
-              <svg width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -240,7 +241,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive4 ? 'faqActive' : 'faq'} onClick={toggleClass4}>
             <div className='question'>
               <h3>How do I schedule a tutoring session?</h3>
-              <svg width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -253,7 +254,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive5 ? 'faqActive' : 'faq'} onClick={toggleClass5}>
             <div className='question'>
               <h3>What is your cancellation policy?</h3>
-              <svg width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
