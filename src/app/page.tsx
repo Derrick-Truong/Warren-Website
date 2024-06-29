@@ -221,7 +221,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
             </div>
             <div className='answer'>
               <p>
-                I hold a Master's degree in Mathematics from Cal Poly San Luis Obispo. I have been teaching high school mathematics since 2000 and have also taught at Cal State East Bay and the College of San Mateo. I have extensive experience working with students from diverse backgrounds and different learning styles.
+                I hold a Masters degree in Mathematics from Cal Poly San Luis Obispo. I have been teaching high school mathematics since 2000 and have also taught at Cal State East Bay and the College of San Mateo. I have extensive experience working with students from diverse backgrounds and different learning styles.
               </p>
             </div>
           </div>
@@ -260,7 +260,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
             </div>
             <div className='answer'>
               <p>
-                I require at least 24 hours' notice for cancellations or rescheduling. If you cancel within 24 hours of the scheduled session, a cancellation fee may apply. Please contact me as soon as possible if you need to cancel or reschedule.
+                I require at least 24 hours notice for cancellations or rescheduling. If you cancel within 24 hours of the scheduled session, a cancellation fee may apply. Please contact me as soon as possible if you need to cancel or reschedule.
               </p>
             </div>
           </div>
