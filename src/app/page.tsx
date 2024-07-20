@@ -272,9 +272,12 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           </div>
         )}
         {popupContact && (
-          <div className="popup" onClick={handleCloseContact}>
-            <span className="close">&times;</span>
-            {popupContact === 'contactForm' ? <ContactUs /> : <Image src={popupContact} alt="Popup Image" width={700} height={700} />}
+          // <div className="popup" onClick={handleCloseContact}>
+          //   <span className="close">&times;</span>
+          //   {popupContact === 'contactForm' ? <ContactUs /> : <Image src={popupContact} alt="Popup Image" width={700} height={700} />}
+          // </div>
+          <div className="popup">
+            {popupContact === 'contactForm' ? <ContactUs /> : <Image src={popupContact} alt="Popup Image" width={700} height={700} />} 
           </div>
         )}
       </main>

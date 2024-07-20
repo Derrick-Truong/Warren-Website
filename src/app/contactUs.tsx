@@ -34,20 +34,43 @@ const ContactUs = () => {
     // </form>
     return (
         <>
-        <section>
-            <div className='container'>
-                <h2 className='--text-center'>Contact Me</h2>
-                <form className='--form-control --card --flex-center --dir-column'>
-                    <input type='text' placeholder='Full Name'
-                        name='user_name' required />
-                    <input type='text' placeholder='Email'
-                        name='user_email' required />
-                    <textarea name='message' cols={30} rows={10}>
-                    </textarea>
-                    <button type='submit' className='--btn-primary'>Send Message</button>
+         <section className='contactForm'>
+            <div>
+                <h1>Contact Us</h1>
+                <p>
+                    In the message section, please provide the following: 
+                    1.
+                </p>
+                <form id='contact-form'>
+                    <label htmlFor='user_name'>Name</label>
+                    <input
+                    type="text"
+                    id="user_name"
+                    name="user_name"
+                    placeholder="Your name..."
+                    required
+                    />
+                    <label htmlFor="user_email">Email</label>
+                    <input
+                    type="email"
+                    id="user_email"
+                    name="user_email"
+                    placeholder="example@gmail.com"
+                    required
+                    />
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Your message..."
+                        required
+                    ></textarea>
+                    <button type="submit" className="submit-btn">
+                        Send
+                    </button>
                 </form>
             </div>
-        </section>
+         </section>
         </>
     );
 };
