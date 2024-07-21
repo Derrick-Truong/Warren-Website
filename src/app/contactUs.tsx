@@ -55,7 +55,7 @@ const ContactUs = () => {
                     type="email"
                     id="user_email"
                     name="user_email"
-                    placeholder="example@gmail.com"
+                    placeholder="exampl@gmail.com"
                     required
                     />
                     <label htmlFor="message">Message</label>
