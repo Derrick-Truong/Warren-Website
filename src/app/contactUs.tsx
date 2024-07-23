@@ -47,7 +47,7 @@ const ContactUs = () => {
                     type="text"
                     id="user_name"
                     name="user_name"
-                    placeholder="Your name"
+                    placeholder="Your name..."
                     required
                     />
                     <label htmlFor="user_email">Email</label>
