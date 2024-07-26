@@ -250,7 +250,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     z-index: 1;
     font-size: 20px;
     color: white;
-    background-color: #003366;
+    background-color: #00478F;
     padding: 8px 15px;
     border-radius: 10px;
     position: absolute;
@@ -296,6 +296,9 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
+.contactUsOuter:hover {
+  background-color: #A3A3A3;
+}
 
 .--btn {
   font-size: 1.6rem;
@@ -456,7 +459,7 @@ section {
 .contactForm {
   max-width: 600px;
 }
-.contactForm div {
+.contactForm .contactFormDiv {
   background: #fff;
   padding: 2.5em;
  
@@ -514,14 +517,21 @@ section {
 .contactForm button {
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   padding: 0.8em;
   background-color: #ff742e;
   color: #fff;
   border-radius: 8px;
   font-size: 1.2em;
   transition: 0.3s;
+  margin: 0.5em 0.5em 0 0.5em;
 }
+.contactForm .contactFormDiv .buttonDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .container {
  
   max-width: 500px;

@@ -1,7 +1,7 @@
 // pages/index.tsx
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import HeadImage from '../assets/Warren_headshot.jpg'; // Adjust the path based on the location of your image
@@ -12,12 +12,12 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import ContactUs from './contactUs';
-import './globals.css'
+import ContactForm from './contactUs';
+import './globals.css';
 
 export default function Home() {
   const [popupImageSrc, setPopupImageSrc] = useState<string | null>(null);
-  const [popupContact, setPopupContact] = useState<string | null>(null);
+  const [popupContact, setPopupContact] = useState<boolean>(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [faqActive, setFaqActive] = useState(false);
   const [faqActive1, setFaqActive1] = useState(false);
@@ -26,13 +26,10 @@ export default function Home() {
   const [faqActive4, setFaqActive4] = useState(false);
   const [faqActive5, setFaqActive5] = useState(false);
 
-
-
-
   const toggleClass = () => {
     setFaqActive(!faqActive)
   }
-  
+
   const toggleClass1 = () => {
     setFaqActive1(!faqActive1)
   }
@@ -50,8 +47,6 @@ export default function Home() {
     setFaqActive5(!faqActive5)
   }
 
-
-
   const handleImageClick = (src: string) => {
     setPopupImageSrc(src);
   };
@@ -61,11 +56,11 @@ export default function Home() {
   };
 
   const handleContactFormClick = () => {
-    setPopupContact('contactForm');
+    setPopupContact(true);
   };
 
   const handleCloseContact = () => {
-    setPopupContact(null);
+    setPopupContact(false);
   };
 
   const toggleParagraph = () => {
@@ -82,26 +77,7 @@ export default function Home() {
       endTime: '18:00', // an end time (6pm in this example)
     }
   ];
-  // useEffect(() => {
-  //   const faqs = document.querySelectorAll('.faq');
 
-  //   faqs.forEach(faq => {
-  //     faq.addEventListener('click', () => {
-  //       console.log('FAQ clicked:', faq); // Debugging line
-  //       faq.classList.toggle('active');
-  //       console.log('Classes after toggle:', faq.className); // Debugging line
-  //     });
-  //   });
-
-  //   // Cleanup function to remove event listeners
-  //   return () => {
-  //     faqs.forEach(faq => {
-  //       faq.removeEventListener('click', () => {
-  //         faq.classList.toggle('active');
-  //       });
-  //     });
-  //   };
-  // }, []);
   return (
     <>
       <nav className="navbar">
@@ -133,7 +109,6 @@ export default function Home() {
             <h2 className="jobTitle">Mathematics Tutor</h2>
             <div className="outerDescription">
               <p className="description">
-                {/* {fullText} */}
                 {isExpanded ? fullText : truncatedText}
                 {!isExpanded && (
                   <span className="expandText" onClick={toggleParagraph}>
@@ -163,7 +138,6 @@ export default function Home() {
             <div>
               <button onClick={handleContactFormClick} className='contactUsOuter'>
                 Contact Me
-                {/* <ContactUs/> */}
               </button>
             </div>
           </div>
@@ -187,22 +161,23 @@ export default function Home() {
         </div>
         <section className='faqSection'>
           <h2 className="studyGuidesTitle">Frequently Asked Questions</h2>
-          <div className={faqActive ? 'faqActive': 'faq'} onClick={toggleClass}>
+          <div className={faqActive ? 'faqActive' : 'faq'} onClick={toggleClass}>
             <div className='question'>
               <h3>What subjects do you tutor?</h3>
-              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path' width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
             <div className='answer'>
               <p>
-I offer tutoring in a wide range of mathematics subjects, including Algebra 1, Algebra 2, Geometry, Precalculus, Calculus (including AP Calculus), and preparation for standardized tests such as the SAT, ACT, and SAT Subject Tests in Mathematics.              </p>
+                I offer tutoring in a wide range of mathematics subjects, including Algebra 1, Algebra 2, Geometry, Precalculus, Calculus (including AP Calculus), and preparation for standardized tests such as the SAT, ACT, and SAT Subject Tests in Mathematics.
+              </p>
             </div>
           </div>
           <div className={faqActive1 ? 'faqActive' : 'faq'} onClick={toggleClass1}>
             <div className='question'>
               <h3>How are tutoring sessions conducted?</h3>
-              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path' width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -215,7 +190,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive2 ? 'faqActive' : 'faq'} onClick={toggleClass2}>
             <div className='question'>
               <h3>What are your qualifications?</h3>
-              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path' width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -228,7 +203,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive3 ? 'faqActive' : 'faq'} onClick={toggleClass3}>
             <div className='question'>
               <h3>How much do you charge for tutoring sessions?</h3>
-              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path' width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -241,7 +216,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive4 ? 'faqActive' : 'faq'} onClick={toggleClass4}>
             <div className='question'>
               <h3>How do I schedule a tutoring session?</h3>
-              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path' width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -254,7 +229,7 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           <div className={faqActive5 ? 'faqActive' : 'faq'} onClick={toggleClass5}>
             <div className='question'>
               <h3>What is your cancellation policy?</h3>
-              <svg className='path'  width='15' height='10' viewBox='0 0 42 25'>
+              <svg className='path' width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
             </div>
@@ -272,18 +247,15 @@ I offer tutoring in a wide range of mathematics subjects, including Algebra 1, A
           </div>
         )}
         {popupContact && (
-          // <div className="popup" onClick={handleCloseContact}>
-          //   <span className="close">&times;</span>
-          //   {popupContact === 'contactForm' ? <ContactUs /> : <Image src={popupContact} alt="Popup Image" width={700} height={700} />}
-          // </div>
           <div className="popup">
-            {popupContact === 'contactForm' ? <ContactUs /> : <Image src={popupContact} alt="Popup Image" width={700} height={700} />} 
+            <ContactForm handleCloseContact={handleCloseContact} />
           </div>
         )}
       </main>
     </>
   );
 }
+
 
 
 
