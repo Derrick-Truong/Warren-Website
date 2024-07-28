@@ -464,7 +464,28 @@ section {
   padding: 2.5em;
  
 }
+.successFormDiv {
+  
+  background: #fff;
+  padding: 2.5em;
 
+}
+.successFormInner {
+  display: flex;
+  justify-content: center;
+}
+.successFormButton {
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  padding: 0.8em;
+  background-color: #00538C;;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: 0.3s;
+  text-align: center;
+}
 .contactForm h1 {
   font-size: 2.5em;
 }
