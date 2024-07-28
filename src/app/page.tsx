@@ -18,6 +18,7 @@ import './globals.css';
 export default function Home() {
   const [popupImageSrc, setPopupImageSrc] = useState<string | null>(null);
   const [popupContact, setPopupContact] = useState<boolean>(false);
+  const [popupSuccess, setPopupSuccess] = useState<boolean>(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [faqActive, setFaqActive] = useState(false);
   const [faqActive1, setFaqActive1] = useState(false);
@@ -53,6 +54,15 @@ export default function Home() {
 
   const handleClosePopup = () => {
     setPopupImageSrc(null);
+  };
+
+  const handleSuccess = () => {
+    setPopupContact(false);
+    setPopupSuccess(true);
+  };
+
+  const handleCloseSuccess = () => {
+    setPopupSuccess(false);
   };
 
   const handleContactFormClick = () => {
@@ -248,7 +258,15 @@ export default function Home() {
         )}
         {popupContact && (
           <div className="popup">
-            <ContactForm handleCloseContact={handleCloseContact} />
+            <ContactForm handleCloseContact={handleCloseContact} handleSuccess={handleSuccess} />
+          </div>
+        )}
+        {popupSuccess && (
+          <div className="popup">
+            <div className="contactFormDiv">
+              <p>Message sent successfully!</p>
+              <button onClick={handleCloseSuccess}>Close</button>
+            </div>
           </div>
         )}
       </main>
