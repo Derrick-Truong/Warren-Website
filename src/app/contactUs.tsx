@@ -4,7 +4,12 @@ import { useState, useEffect } from 'react';
 import { useModal } from './Context/modal';
 
 
-const ContactUs = ({ handleCloseContact, handleSuccess }) => {
+interface ContactFormProps {
+    handleCloseContact: () => void;
+    handleSuccess: () => void;
+}
+
+const ContactUs: React.FC<ContactFormProps> = ({handleCloseContact, handleSuccess}) => {
     const form = useRef(null); // Explicitly initialize useRef with null
     const sendEmail = (e: { preventDefault: () => void; }) => {
         e.preventDefault();

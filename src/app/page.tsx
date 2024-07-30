@@ -264,7 +264,7 @@ export default function Home() {
         {popupSuccess && (
           <div className="popup">
             <div className='successFormDiv'>
-              <p>Message sent successfully!</p>
+              <p>Message sent successfully! Please wait for instructor to email you.</p>
               <div className='successFormInner'>
                 <button className='successFormButton' onClick={handleCloseSuccess}>Close</button>
               </div>
