@@ -93,13 +93,14 @@ export default function Home() {
       <nav className="navbar">
         <ul className="navList">
           <li className="navItem">
-            <Link href="/">Home</Link>
+            Home
+            {/* <Link href="/">Home</Link> */}
           </li>
           <li className="navItem">
-            <Link href="/about">About</Link>
+            {/* <Link href="/about">About</Link> */}
           </li>
           <li className="navItem">
-            <Link href="/contact">FAQ</Link>
+            {/* <Link href="/contact">FAQ</Link> */}
           </li>
         </ul>
       </nav>

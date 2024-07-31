@@ -35,15 +35,15 @@ body {
     width: 50%;
 }
 
-.navItem a {
-    color: white;
+.navItem {
+    color: #003366;
     text-decoration: none;
     font-size: 19.2px;
 }
 
-.navItem a:hover {
+/* .navItem a:hover {
     text-decoration: underline;
-}
+} */
 
 .main-content {
     display: flex;
