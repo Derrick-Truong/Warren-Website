@@ -37,7 +37,15 @@ const ContactUs: React.FC<ContactFormProps> = ({handleCloseContact, handleSucces
                 <div className='contactFormDiv'>
                     <h1>Contact Us</h1>
                     <p>Please provide the following in the message text area:
-                        1. desired topic to be tutored on 2. in person or online session 3.
+                    </p>
+                    <p className='firstMessageInstruction'>
+                        1. Desired topic to be tutored on
+                    </p>
+                    <p>
+                        2. In person or Zoom session
+                    </p>
+                    <p className='lastMessageInstruction'>
+                        3. Desired start date (MM/DD/YY)
                     </p>
                     <form id='contact-form' ref={form} onSubmit={sendEmail}>
                         <label htmlFor='user_name'>Name</label>
