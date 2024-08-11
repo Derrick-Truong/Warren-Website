@@ -109,7 +109,7 @@ export default function Home() {
           <Image alt="Head" src={HeadImage} className="head" />
           <div className="authorBody">
             <div className="authorTitle">
-              <h1 className="authorName">Warren Fernandez</h1>
+              <h1 className="authorName">Warren Fernandes</h1>
               <div className="topicsOuter">
                 <div className="topics">Algebra</div>
                 <div className="topics">Geometry</div>
