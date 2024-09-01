@@ -112,7 +112,7 @@ export default function Home() {
               <h1 className="authorName">Warren Fernandes</h1>
               <div className="topicsOuter">
                 <div className="topics">Algebra</div>
-                <div className="topics">Geometr</div>
+                <div className="topics">Geometry</div>
                 <div className="topics">PreCalculus</div>
                 <div className="topics">Calculus</div>
               </div>
