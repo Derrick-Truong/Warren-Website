@@ -94,7 +94,7 @@ export default function Home() {
         <ul className="navList">
           <li className="navItem">
             Home
-            {/* <Link href="/">Home</Link> */}
+            {/* <Link href="/">Homee</Link> */}
           </li>
           <li className="navItem">
             {/* <Link href="/about">About</Link> */}
