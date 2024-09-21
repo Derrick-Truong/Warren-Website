@@ -79,7 +79,7 @@ export default function Home() {
 
   const truncatedText = "Hello! I am Warren Fernandes, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo. Since 2000, I have been teaching high school mathematics at a K - 12 school in the East Bay.I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo.Throughout my career, I have been fortunate to achieve a 95 % pass rate among my AP Calculus students on the AP exam. Beyond my professional life, I am a husband and father who loves to travel and maintain an active lifestyle.  My teaching philosophy is centered on making math accessible and enjoyable for all students. I have extensive experience working with students from diverse backgrounds and different learning styles";
   const fullText = "Hello! I am Warren Fernandes, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo. Since 2000, I have been teaching high school mathematics at a K-12 school in the East Bay. I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo. Throughout my career, I have been fortunate to achieve a 95% pass rate among my AP Calculus students on the AP exam. Beyond my professional life, I am a husband and father who loves to travel and maintain an active lifestyle. My teaching philosophy is centered on making math accessible and enjoyable for all students. I have extensive experience working with students from diverse backgrounds and different learning styles, and I am passionate about helping each student reach their full potential. I am available to tutor Algebra 1 through AP Calculus, as well as standardized tests such as the ACT and SAT I/II. Whether you're struggling with basic concepts or aiming to master advanced topics, I am here to provide personalized guidance and support to help you succeed.";
-
+  const fullText2 = "Hello! I am Warren Fernandes, a dedicated mathematics tutor with a deep-rooted passion for teaching. My educational journey began in San Francisco, where I attended Edison Elementary, followed by Ben Franklin Middle School and Jefferson High School in Daly City. I went on to earn my Master’s degree in Mathematics from Cal Poly San Luis Obispo. Since 2000, I have been teaching high school mathematics at a K-12 school in the East Bay. I have also had the privilege of teaching at Cal State East Bay and the College of San Mateo. Throughout my career, I have been fortunate to achieve a 95% pass rate among my AP Calculus students on the AP exam. Beyond my professional life, I am a husband and father who loves to travel and maintain an active lifestyle. My teaching philosophy is centered on making math accessible and enjoyable for all students. I have extensive experience working with students from diverse backgrounds and different learning styles, and I am passionate about helping each student reach their full potential. I am available to tutor Algebra 1 through AP Calculus, as well as standardized tests such as the ACT and SAT I/II. Whether you're struggling with basic concepts or aiming to master advanced topics, I am here to provide personalized guidance and support to help you succeed."
   const businessHours = [
     {
       daysOfWeek: [1, 2, 3, 4], // Monday - Thursday
@@ -88,8 +88,15 @@ export default function Home() {
     }
   ];
 
+  const width = [
+    {
+      width: '100vh'
+    }
+  ]
+
   return (
     <>
+      {/* <div className='wrapper'> */}
       <nav className="navbar">
         <ul className="navList">
           <li className="navItem">
@@ -106,29 +113,41 @@ export default function Home() {
       </nav>
       <main className={`main-content ${popupImageSrc ? 'blur-background' : ''}`}>
         <div className="aboutMe">
-          <Image alt="Head" src={HeadImage} className="head" />
-          <div className="authorBody">
-            <div className="authorTitle">
+         
+          <div className='headOuter'>
+            <Image alt="Head" src={HeadImage} className='headImage' />
+            <button onClick={handleContactFormClick} className='contactUsOuter'>
+              Contact Me
+            </button>
+          </div>
+        
+          <div className="grid-col-span-3">
+            <div className="topicsOuter">
               <h1 className="authorName">Warren Fernandes</h1>
-              <div className="topicsOuter">
-                <div className="topics">Algebra</div>
-                <div className="topics">Geometry</div>
-                <div className="topics">PreCalculus</div>
-                <div className="topics">Calculus</div>
-              </div>
             </div>
+            {/* </div> */}
+
             <h2 className="jobTitle">Mathematics Tutor</h2>
+            <div className='topicsOuter'>
+              <div className="topics">Algebra</div>
+              <div className="topics">Geometry</div>
+              <div className="topics">PreCalculus</div>
+              <div className="topics">Calculus</div>
+            </div>
             <div className="outerDescription">
               <p className="description">
-                {isExpanded ? fullText : truncatedText}
+                {fullText2}
+                {/* {isExpanded ? fullText : truncatedText}
                 {!isExpanded && (
                   <span className="expandText" onClick={toggleParagraph}>
                     ...more
                   </span>
-                )}
+                )} */}
               </p>
             </div>
           </div>
+          {/* </div> */}
+          {/* <div className='calendarWrapper'>
           <div className='calendarOuter'>
             <FullCalendar
               plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
@@ -152,10 +171,13 @@ export default function Home() {
               </button>
             </div>
           </div>
+          </div> */}
         </div>
-        <div className="studyGuidesOuter">
+        <div className='studyGuidesOuterOuter'>
           <h2 className="studyGuidesTitle">Sample Study Guides</h2>
-          <div className="studyGuides">
+          <div className="studyGuidesOuter">
+            {/* <h2 className="studyGuidesTitle">Sample Study Guides</h2> */}
+            {/* <div className="studyGuides"> */}
             <div className="studyPic" onClick={() => handleImageClick(Algebra.src)}>
               <Image src={Algebra} alt="Algebra" className="studyImage" />
               <div className='studyPicTitles'>Algebra</div>
@@ -168,10 +190,11 @@ export default function Home() {
               <Image src={Calculus} alt="Calculus" className="studyImage" />
               <div className='studyPicTitles3'>Calculus</div>
             </div>
+            {/* </div> */}
           </div>
         </div>
-        <section className='faqSection'>
-          <h2 className="studyGuidesTitle">Frequently Asked Questions</h2>
+        <div className='faqSection'>
+          <h2 className="faqTitle">Frequently Asked Questions</h2>
           <div className={faqActive ? 'faqActive' : 'faq'} onClick={toggleClass}>
             <div className='question'>
               <h3>What subjects do you tutor?</h3>
@@ -250,7 +273,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+        </div>
         {popupImageSrc && (
           <div className="popupImage" onClick={handleClosePopup}>
             <span className="close">&times;</span>
@@ -273,6 +296,8 @@ export default function Home() {
           </div>
         )}
       </main>
+      {/* </div> */}
+
     </>
   );
 }
