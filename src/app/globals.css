@@ -140,7 +140,7 @@ padding-left: 1rem;
 
 .aboutMe img {
    /* max-width: 22.5rem; */
-   min-height: 9rem;
+   /* min-height: 9rem; */
 border-radius: 50%;
 object-fit: cover;
 
