@@ -133,7 +133,7 @@ padding-left: 1rem;
     display: flex;
     flex-grow: 0;
     max-width: 1600px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     gap: 0.313rem;
 
 }
