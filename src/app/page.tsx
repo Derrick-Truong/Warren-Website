@@ -127,7 +127,7 @@ export default function Home() {
             </div>
             {/* </div> */}
 
-            <h2 className="jobTitle">Mathematics Tuto</h2>
+            <h2 className="jobTitle">Mathematics Tutor</h2>
             <div className='topicsOuter'>
               <div className="topics">Algebra</div>
               <div className="topics">Geometry</div>
