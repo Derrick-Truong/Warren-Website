@@ -104,7 +104,7 @@ export default function Home() {
             {/* <Link href="/">Home</Link> */}
           </li>
           <li className="navItem">
-            {/* <Link href="/about">About</Link> */}
+            {/* <Link href="/about">Abou</Link> */}
           </li>
           <li className="navItem">
             {/* <Link href="/contact">FAQ</Link> */}
