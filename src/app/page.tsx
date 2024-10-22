@@ -243,7 +243,7 @@ export default function Home() {
             </div>
             <div className='answer'>
               <p>
-                M tutoring rates vary depending on the subject and level of difficulty. Please contact me directly to discuss pricing and to schedule a session.
+                My tutoring rates vary depending on the subject and level of difficulty. Please contact me directly to discuss pricing and to schedule a session.
               </p>
             </div>
           </div>
