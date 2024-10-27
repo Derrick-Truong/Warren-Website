@@ -8,7 +8,7 @@ import HeadImage from '../assets/Warren_headshot.jpg'; // Adjust the path based 
 import Algebra from '../assets/algebra.jpg';
 import Calculus from '../assets/calculus.jpg';
 import Geometry from '../assets/geometry.jpg';
-import FullCalendar from '@fullcalendar/react';
+// import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
