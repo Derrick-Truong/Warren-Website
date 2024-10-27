@@ -236,7 +236,7 @@ export default function Home() {
           </div>
           <div className={faqActive3 ? 'faqActive' : 'faq'} onClick={toggleClass3}>
             <div className='question'>
-              <h3>How much do charge for tutoring sessions?</h3>
+              <h3>How much do you charge for tutoring sessions?</h3>
               <svg className='path' width='15' height='10' viewBox='0 0 42 25'>
                 <path d='M3 3L21 21L39 3' stroke='white' strokeWidth='7' strokeLinecap='round' />
               </svg>
