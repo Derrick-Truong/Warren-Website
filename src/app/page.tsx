@@ -11,7 +11,7 @@ import Geometry from '../assets/geometry.jpg';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
-import interactionPlugin from '@fullcalendar/interaction';
+// import interactionPlugin from '@fullcalendar/interaction';
 import ContactForm from './contactUs';
 import './globals.css';
 
